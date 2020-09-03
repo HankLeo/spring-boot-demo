@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
  * @version: V1.0
  * @modified: yangkai.shen
  */
-@Data
+@Data    // lombok ignore constructor & getter & setter
 @Component
 public class ApplicationProperty {
 	@Value("${application.name}")

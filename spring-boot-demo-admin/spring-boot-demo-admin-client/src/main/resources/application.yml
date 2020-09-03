@@ -10,7 +10,8 @@ spring:
     admin:
       client:
         # Spring Boot Admin 服务端地址
-        url: "http://localhost:8000/"
+        # 与SpringBootDemoAdminServerApplication相对应
+        url: "http://localhost:9090/"
         instance:
           metadata:
             # 客户端端点信息的安全认证信息
@@ -18,7 +19,7 @@ spring:
             user.password: ${spring.security.user.password}
   security:
     user:
-      name: xkcoding
+      name: hank
       password: 123456
 management:
   endpoint:

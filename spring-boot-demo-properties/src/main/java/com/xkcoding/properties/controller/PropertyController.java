@@ -25,7 +25,7 @@ public class PropertyController {
 	private final ApplicationProperty applicationProperty;
 	private final DeveloperProperty developerProperty;
 
-	@Autowired
+	@Autowired    // autowired of applicationProperty & developerProperty
 	public PropertyController(ApplicationProperty applicationProperty, DeveloperProperty developerProperty) {
 		this.applicationProperty = applicationProperty;
 		this.developerProperty = developerProperty;
